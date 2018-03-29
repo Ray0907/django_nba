@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+<div class="container">
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Title</th>
+      <th scope="col">Preview</th>
+
+    </tr>
+  </thead>
+  <tbody>
+  {% for news in news_list %}
+    <tr>
+      <th scope="row"><a href="{% url 'news_detail' id=news.id%}">{{news.title}}</a></th>
+      <td>{{news.pre_content}}</td>
+      <td>{{news.post_time}}</td>
+    </tr>
+  {%endfor%}
+  </tbody>
+</table>
+</div>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django-DRF Demo</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'stylesheets/bootstrap.min.css' %}" type="text/css"/>
+    <link rel="stylesheet" href="{% static 'stylesheets/jquery.dataTables.css' %}" type="text/css"/>
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron">
+        <h1>Django-DRF Demo</h1>
+        <p>dataTable Example (server-side)</p>
+    </div>
+
+
+
+    <!-- datatables -->
+    <table id="datatables" class="table table-hover">
+        <thead>
+        <tr>
+            <th class="link">title</th>
+            <th>Preview</th>
+            <th>Detail</th>
+            <th>post_time</th>
+
+        </tr>
+        </thead>
+        <tfoot>
+        <tr>
+
+        </tr>
+        </tfoot>
+    </table>
+
+
+
+</div>
+<script src="{% static 'jquery.min.js' %}"></script>
+<script src="{% static 'bootstrap.min.js' %}"></script>
+<script src="{% static 'jquery.dataTables.js' %}"></script>
+<script src="{% static 'index.js' %}"></script>
+</body>
