@@ -1,1 +1,1 @@
-# Django rest framework -Datatable server-side processing
+# Django rest framework Datatable server-side processing
